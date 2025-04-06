@@ -83,16 +83,16 @@ $(document).ready(function() {
             data: JSON.stringify(formData),
             success: function(response) {
                 if (response.success) {
-                    // TODO: Replace with dynamic DOM update instead of reload
+                    
                     location.reload();
                 } else {
-                    // TODO: Implement error message display
+                    
                     console.error('Task update failed:', response.message);
                 }
             },
             error: function(xhr, status, error) {
                 console.error('Task update request failed:', status, error);
-                // TODO: Implement proper error handling
+                
             }
         });
     });

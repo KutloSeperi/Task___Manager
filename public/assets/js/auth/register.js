@@ -6,7 +6,7 @@
  * during registration process and handles success/error cases.
  * 
  * @author Kutlo Sepesi
- * @since 1.0.0
+ * 
  */
 $(document).ready(function() {
     // Form submission handler

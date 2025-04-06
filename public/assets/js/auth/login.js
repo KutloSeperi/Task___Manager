@@ -6,7 +6,7 @@
  * feedback during authentication process.
  * 
  * @author Kutlo Sepesi
- * @since 1.0.0
+ *
  */
 $(document).ready(function() {
     // Form submission handler
