@@ -4,7 +4,6 @@ use App\Controllers\TaskController;
 use App\Core\Database;
 use App\Core\Session;
 
-// Get raw POST data
 $input = json_decode(file_get_contents('php://input'), true);
 
 $session = new Session();
@@ -15,7 +14,7 @@ if (!$session->get('user_id')) {
     die(json_encode(['success' => false, 'message' => 'Unauthorized']));
 }
 
-$taskId = $input['task_id'] ?? null; // Changed from $_POST to $input
+$taskId = $input['task_id'] ?? null; 
 
 if (!$taskId) {
     header('Content-Type: application/json');

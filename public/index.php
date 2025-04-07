@@ -9,9 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="bg-light min-vh-100 d-flex align-items-center">
-    <div class="container-lg"> <!-- Changed to container-lg for better width control -->
+    <div class="container-lg"> 
         <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8 col-xl-6"> <!-- Adjusted column sizes -->
+            <div class="col-12 col-md-10 col-lg-8 col-xl-6"> 
                 <div class="card shadow">
                     <div class="card-header p-0">
                         <ul class="nav nav-tabs nav-justified">

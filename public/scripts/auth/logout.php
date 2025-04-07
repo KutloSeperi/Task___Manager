@@ -5,7 +5,7 @@ use App\Core\Session;
 Session::start();
 Session::destroy();
 
-// Clear all cookies
+
 if (isset($_SERVER['HTTP_COOKIE'])) {
     $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
     foreach($cookies as $cookie) {
@@ -16,11 +16,10 @@ if (isset($_SERVER['HTTP_COOKIE'])) {
     }
 }
 
-// If AJAX request, return empty response
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH'])) {
     die();
 }
 
-// Otherwise redirect
+
 header('Location: index.php');
 exit;
